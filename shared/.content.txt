@@ -1,0 +1,4 @@
+Here you should have:
+
+- completed: a symlink to your completed downloads in Transmission
+- media: a symlink to your already sorted and clean media files

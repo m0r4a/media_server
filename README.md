@@ -1,7 +1,21 @@
-# Jellyfin project
+# Media server
 
-This is my first project creating a server and using docker.
+Update for my media server project which grown up a lot this last days.
 
-I had some complications with the file permissions because of the media source being on a different partition but I managed to fix it after a wile.
+## Technologies used
 
-I think I don't need much more to add much more to this since im not a very big fan of watching movies or series but it was cool to get my feet wet with docker and servers.
+- [Docker compose](https://docs.docker.com/compose/)
+- [Jellyfin](https://jellyfin.org/)
+- [Jellyseer](https://github.com/Fallenbagel/jellyseerr)
+- [Sonarr](https://sonarr.tv/)
+- [Radarr](https://radarr.video/)
+- [Prowlarr](https://prowlarr.com/)
+- [Transmission](https://transmissionbt.com/)
+
+## How they communicate
+
+<p align="center">
+    <img src="./resources/arch.png" alt="Architecture of the project"/>
+</p>
+
+## How do directories work
