@@ -1,39 +1,37 @@
 # Secrets folder
-./secrets/
-!./secrets/.secret_list
+secrets/
+!secrets/.secret_list
 
 # Shared folder
-./shared/
-!./shared/.content.txt
+shared/
+!shared/.content.txt
 
 # Homarr
-./apps/homarr/data
+apps/homarr/data/*
 
 # Jellyfin
-./apps/jellyfin/cache/
-./apps/jellyfin/config/*
-!./apps/jellyfin/custom.css
+apps/jellyfin/cache/*
+apps/jellyfin/config/*
+!apps/jellyfin/custom.css
 
 # Jellyseer
-./apps/jellyseer/*
-!./apps/jellyseer/settings.json
+apps/jellyseer/*
+!apps/jellyseer/settings.json
 
 # Prowlarr
-./apps/prowlarr/config/*
-!./apps/prowlarr/config/config.xml
+apps/prowlarr/config/*
+!apps/prowlarr/config/config.xml
 
 # Sonarr
-./apps/sonarr/data/*
-./apps/sonarr/config/*
-!./apps/sonarr/config/config.xml
+apps/sonarr/data/*
+apps/sonarr/config/*
+!apps/sonarr/config/config.xml
 
 # Radarr
-./apps/radarr/data/*
-./apps/radarr/config/*
-!./apps/radarr/config/config.xml
+apps/radarr/data/*
+apps/radarr/config/*
+!apps/radarr/config/config.xml
 
 # Transmission
-./apps/transmission/config/*
-!./apps/transmission/config/.content.txt
-
-
+apps/transmission/config/*
+!apps/transmission/config/.content.txt
