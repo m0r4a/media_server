@@ -151,11 +151,101 @@
             "width": 1,
             "height": 1
           }
+        },
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 4
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
         }
       },
       "integration": {
         "type": null,
         "properties": []
+      }
+    },
+    {
+      "id": "bba2731c-9070-474a-980c-91a5fea83b30",
+      "name": "Jellyfin",
+      "url": "http://192.168.2.3:8096",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/jellyfin.svg",
+        "appNameStatus": "normal",
+        "positionAppName": "column",
+        "lineClampAppName": 1,
+        "appNameFontSize": 16
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "statusCodes": [
+          "200",
+          "301",
+          "302",
+          "304",
+          "307",
+          "308"
+        ]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://localhost:8096"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "8a5d99fb-8d7e-4b80-a96b-d8fc7fb51baf"
+        }
+      },
+      "shape": {
+        "md": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "sm": {
+          "location": {
+            "x": 1,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": "jellyfin",
+        "properties": [
+          {
+            "field": "username",
+            "type": "public",
+            "value": "m0r4a"
+          },
+          {
+            "field": "password",
+            "type": "private",
+            "value": "m0r4a04"
+          }
+        ]
       }
     },
     {
@@ -303,75 +393,6 @@
       }
     },
     {
-      "id": "bcc05142-8651-4ce6-857e-2d41f84a2ad4",
-      "name": "DuckDuckGo",
-      "url": "https://duckduckgo.com",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/duckduckgo.svg",
-        "appNameStatus": "normal",
-        "positionAppName": "column",
-        "lineClampAppName": 1,
-        "appNameFontSize": 16
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "statusCodes": [
-          "200",
-          "301",
-          "302",
-          "304",
-          "307",
-          "308"
-        ]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "https://duckduckgo.com/"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "cc371eff-9795-4fbf-b764-8654a2d75f8e"
-        }
-      },
-      "shape": {
-        "md": {
-          "location": {
-            "x": 4,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 2
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "sm": {
-          "location": {
-            "x": 2,
-            "y": 1
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
       "id": "d10c506e-5a7a-4463-8af2-d5e68dab7b33",
       "name": "Radarr",
       "url": "http://192.168.2.7:7878",
@@ -447,11 +468,11 @@
       }
     },
     {
-      "id": "a743a7fc-91e3-4cb7-aeea-31f822bdecb2",
-      "name": "WhatsApp",
-      "url": "https://web.whatsapp.com",
+      "id": "bcc05142-8651-4ce6-857e-2d41f84a2ad4",
+      "name": "DuckDuckGo",
+      "url": "https://duckduckgo.com",
       "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/whatsapp.svg",
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/duckduckgo.svg",
         "appNameStatus": "normal",
         "positionAppName": "column",
         "lineClampAppName": 1,
@@ -470,7 +491,7 @@
       },
       "behaviour": {
         "isOpeningNewTab": true,
-        "externalUrl": "https://web.whatsapp.com/"
+        "externalUrl": "https://duckduckgo.com/"
       },
       "area": {
         "type": "category",
@@ -480,178 +501,29 @@
       },
       "shape": {
         "md": {
+          "location": {
+            "x": 4,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 2
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "sm": {
           "location": {
             "x": 2,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "lg": {
-          "location": {
-            "x": 0,
             "y": 1
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "sm": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": null,
-        "properties": []
-      }
-    },
-    {
-      "id": "bba2731c-9070-474a-980c-91a5fea83b30",
-      "name": "Jellyfin",
-      "url": "http://192.168.2.3:8096",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/jellyfin.svg",
-        "appNameStatus": "normal",
-        "positionAppName": "column",
-        "lineClampAppName": 1,
-        "appNameFontSize": 16
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "statusCodes": [
-          "200",
-          "301",
-          "302",
-          "304",
-          "307",
-          "308"
-        ]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "http://localhost:8096"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "8a5d99fb-8d7e-4b80-a96b-d8fc7fb51baf"
-        }
-      },
-      "shape": {
-        "md": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "sm": {
-          "location": {
-            "x": 1,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        }
-      },
-      "integration": {
-        "type": "jellyfin",
-        "properties": [
-          {
-            "field": "username",
-            "type": "public",
-            "value": "m0r4a"
-          },
-          {
-            "field": "password",
-            "type": "private",
-            "value": "m0r4a04"
-          }
-        ]
-      }
-    },
-    {
-      "id": "17570411-e274-482c-9a67-8be2730cd376",
-      "name": "GitHub",
-      "url": "https://github.com/m0r4a",
-      "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/github.svg",
-        "appNameStatus": "normal",
-        "positionAppName": "column",
-        "lineClampAppName": 1,
-        "appNameFontSize": 16
-      },
-      "network": {
-        "enabledStatusChecker": true,
-        "statusCodes": [
-          "200",
-          "301",
-          "302",
-          "304",
-          "307",
-          "308"
-        ]
-      },
-      "behaviour": {
-        "isOpeningNewTab": true,
-        "externalUrl": "https://github.com/m0r4a"
-      },
-      "area": {
-        "type": "category",
-        "properties": {
-          "id": "cc371eff-9795-4fbf-b764-8654a2d75f8e"
-        }
-      },
-      "shape": {
-        "md": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 3
-          },
-          "size": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        "sm": {
-          "location": {
-            "x": 1,
-            "y": 0
           },
           "size": {
             "width": 1,
@@ -740,6 +612,144 @@
       }
     },
     {
+      "id": "a743a7fc-91e3-4cb7-aeea-31f822bdecb2",
+      "name": "WhatsApp",
+      "url": "https://web.whatsapp.com",
+      "appearance": {
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/whatsapp.svg",
+        "appNameStatus": "normal",
+        "positionAppName": "column",
+        "lineClampAppName": 1,
+        "appNameFontSize": 16
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "statusCodes": [
+          "200",
+          "301",
+          "302",
+          "304",
+          "307",
+          "308"
+        ]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "https://web.whatsapp.com/"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "cc371eff-9795-4fbf-b764-8654a2d75f8e"
+        }
+      },
+      "shape": {
+        "md": {
+          "location": {
+            "x": 2,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 1
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "sm": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
+      "id": "a0e43726-6546-4191-8742-6d317313a194",
+      "name": "Router",
+      "url": "http://192.168.1.254",
+      "appearance": {
+        "iconUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2022%2F04%2Ftelmex-logo-1.png&f=1&nofb=1&ipt=e6dfbf745f9540c52c7e6cb5ca6c3f8e7c5a55b200c1cf8f3c78ff7cec4f664b&ipo=images",
+        "appNameStatus": "normal",
+        "positionAppName": "column",
+        "lineClampAppName": 1,
+        "appNameFontSize": 16
+      },
+      "network": {
+        "enabledStatusChecker": true,
+        "statusCodes": [
+          "200",
+          "301",
+          "302",
+          "304",
+          "307",
+          "308"
+        ]
+      },
+      "behaviour": {
+        "isOpeningNewTab": true,
+        "externalUrl": "http://192.168.1.254"
+      },
+      "area": {
+        "type": "category",
+        "properties": {
+          "id": "cc371eff-9795-4fbf-b764-8654a2d75f8e"
+        }
+      },
+      "shape": {
+        "md": {
+          "location": {
+            "x": 1,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        },
+        "sm": {
+          "location": {
+            "x": 2,
+            "y": 0
+          },
+          "size": {
+            "width": 1,
+            "height": 1
+          }
+        }
+      },
+      "integration": {
+        "type": null,
+        "properties": []
+      }
+    },
+    {
       "id": "c1aad0aa-2d4d-447c-8e8b-92d53894b166",
       "name": "Sonarr",
       "url": "http://192.168.2.6:8989",
@@ -815,11 +825,11 @@
       }
     },
     {
-      "id": "a0e43726-6546-4191-8742-6d317313a194",
-      "name": "Twitch",
-      "url": "https://www.twitch.tv",
+      "id": "17570411-e274-482c-9a67-8be2730cd376",
+      "name": "GitHub",
+      "url": "https://github.com/m0r4a",
       "appearance": {
-        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/twitch.svg",
+        "iconUrl": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/github.svg",
         "appNameStatus": "normal",
         "positionAppName": "column",
         "lineClampAppName": 1,
@@ -838,7 +848,7 @@
       },
       "behaviour": {
         "isOpeningNewTab": true,
-        "externalUrl": "https://www.twitch.tv/"
+        "externalUrl": "https://github.com/m0r4a"
       },
       "area": {
         "type": "category",
@@ -849,7 +859,7 @@
       "shape": {
         "md": {
           "location": {
-            "x": 1,
+            "x": 0,
             "y": 0
           },
           "size": {
@@ -860,7 +870,7 @@
         "lg": {
           "location": {
             "x": 0,
-            "y": 0
+            "y": 3
           },
           "size": {
             "width": 1,
@@ -869,7 +879,7 @@
         },
         "sm": {
           "location": {
-            "x": 2,
+            "x": 1,
             "y": 0
           },
           "size": {
@@ -885,6 +895,54 @@
     }
   ],
   "widgets": [
+    {
+      "id": "5b6a9a94-4695-47fa-96fa-41f34b0ddb61",
+      "type": "calendar",
+      "properties": {
+        "hideWeekDays": true,
+        "showUnmonitored": false,
+        "radarrReleaseType": "inCinemas",
+        "fontSize": "xs"
+      },
+      "area": {
+        "type": "sidebar",
+        "properties": {
+          "location": "left"
+        }
+      },
+      "shape": {
+        "sm": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 2
+          }
+        },
+        "md": {
+          "location": {
+            "x": 0,
+            "y": 2
+          },
+          "size": {
+            "width": 2,
+            "height": 2
+          }
+        },
+        "lg": {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "width": 2,
+            "height": 2
+          }
+        }
+      }
+    },
     {
       "id": "e3004052-6b83-480e-b458-56e8ccdca5f0",
       "type": "weather",
@@ -989,54 +1047,6 @@
           "size": {
             "width": 2,
             "height": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "5b6a9a94-4695-47fa-96fa-41f34b0ddb61",
-      "type": "calendar",
-      "properties": {
-        "hideWeekDays": true,
-        "showUnmonitored": false,
-        "radarrReleaseType": "inCinemas",
-        "fontSize": "xs"
-      },
-      "area": {
-        "type": "sidebar",
-        "properties": {
-          "location": "left"
-        }
-      },
-      "shape": {
-        "sm": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 2
-          }
-        },
-        "md": {
-          "location": {
-            "x": 0,
-            "y": 2
-          },
-          "size": {
-            "width": 2,
-            "height": 2
-          }
-        },
-        "lg": {
-          "location": {
-            "x": 0,
-            "y": 0
-          },
-          "size": {
-            "width": 2,
-            "height": 2
           }
         }
       }
