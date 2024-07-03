@@ -160,11 +160,12 @@ services:
         - ./apps/transmission/config/protonvpn:/etc/openvpn/custom/
         - ./apps/transmission/config/transmission:/config
         - ./shared/completed/:/data/completed
+        - ./secrets/openvpn-credentials.txt:/config/openvpn-credentials.txt
     environment:
         - OPENVPN_PROVIDER=custom
         - OPENVPN_CONFIG=mx.protonvpn.udp
-        - OPENVPN_USERNAME=bYIER3OzQslY8aHC
-        - OPENVPN_PASSWORD=2Zz7ePC5ik9JqaLlQMp7kQ4vBhIZrzR6
+        - OPENVPN_USERNAME=**None**
+        - OPENVPN_PASSWORD=**None**
         - LOCAL_NETWORK=192.168.0.0/16
     logging:
         driver: json-file
